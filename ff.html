@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FF Original Topup</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<h2>FF Original Topup</h2>
+<form id="ffForm">
+  <label for="playerId">Player ID:</label>
+  <input type="text" id="playerId" placeholder="Masukkan Player ID" required>
+
+  <label for="diamond">Pilih Diamond:</label>
+  <select id="diamond">
+    <option value="25">25 Diamond - RM5.00</option>
+    <option value="100">100 Diamond - RM5.00</option>
+    <option value="310">310 Diamond - RM5.00</option>
+    <option value="520">520 Diamond - RM5.00</option>
+    <option value="1060">1060 Diamond - RM5.00</option>
+    <option value="2180">2180 Diamond - RM5.00</option>
+    <option value="5600">5600 Diamond - RM5.00</option>
+    <option value="11500">11500 Diamond - RM5.00</option>
+  </select>
+
+  <label for="payment">Payment:</label>
+  <select id="payment">
+    <option value="cod">COD / WhatsApp (Malaysia)</option>
+    <option value="tng">TNG (Malaysia)</option>
+    <option value="gopay">GOPAY (Malaysia / Indonesia)</option>
+  </select>
+
+  <button type="button" onclick="submitTopup(document.getElementById('playerId').value,'FF Original',document.getElementById('diamond').value,document.getElementById('payment').value)">Topup Sekarang</button>
+</form>
+<script src="../js/main.js"></script>
+</body>
+</html>
